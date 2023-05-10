@@ -15,7 +15,7 @@ app.use(cors({
   origin: [`https://daily-vid.vercel.app/usersearch`,`https://daily-vid.vercel.app/showcase`,'https://daily-vid.vercel.app/', "https://dailyvid.onrender.com"]
 }))
 
-const PORT = `https://dailyvid-service.onrender.com`;
+const PORT = 8585;
 
 app.use(express.json())
 
