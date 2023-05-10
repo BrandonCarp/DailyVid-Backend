@@ -11,8 +11,9 @@ const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 
 
 const app = express();
+
 app.use(cors({
-  origin: [`https://daily-vid.vercel.app/usersearch`,`https://daily-vid.vercel.app/showcase`,'https://daily-vid.vercel.app/', "https://dailyvid-service.onrender.com"]
+  origin: `https://daily-vid.vercel.app`
 }))
 
 const PORT = 8585;
