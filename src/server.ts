@@ -15,7 +15,7 @@ app.use(cors({
   origin: [`http://localhost:3000`, "https://dailyvid.onrender.com"]
 }))
 
-const PORT = 80;
+const PORT = 8080;
 
 app.use(express.json())
 
