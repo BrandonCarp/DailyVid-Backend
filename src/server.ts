@@ -12,9 +12,15 @@ const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 
 const app = express();
 
+// app.use(cors({
+//   origin: [`https://daily-vid.vercel.app`, `https://http://localhost:3000`]
+// }))
+
 app.use(cors({
-  origin: `https://daily-vid.vercel.app`
-}))
+  origin: ['https://daily-vid.vercel.app', 'http://localhost:3000'],
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type'],
+}));
 
 const PORT = 8585;
 
@@ -40,7 +46,7 @@ axios.get(`https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&q
  
   res.send(response.data)
 }).catch(function (error: Error) {
-  res.send(videoJson)
+  // res.send(videoJson)
   console.log(error)
 })
 })
@@ -51,7 +57,7 @@ axios.get(`https://youtube.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KE
 .then(function (response: AxiosResponse<YoutubePlaylistItemsResponse[]>) {
    res.send(response.data)
 }).catch(function (error: Error) {
-  res.send(channelData)
+  // res.send(channelData)
   console.log(error)
 })
 })
