@@ -5,13 +5,13 @@ export const channelData = {
       "etag": "B2HMZcuRNIv2d8rsDB2QpQDulCI",
       "id": {
         "kind": "youtube#video",
-        "videoId": "v3UXBJtZE8I"
+        "videoId": "ahnPA9Hcxsg"
       },
       "kind": "youtube#searchResult",
       "snippet": {
         "channelId": "UCOksmA9_w95aysY6RPcUqEA",
-        "channelTitle": "tyler1 highlights",
-        "description": "Buy Tylers headset from Amazon - prourls.co/tCVD (affiliate) follow twitter for uploads - https://twitter.com/Tyler1Highlight Twitch: ...",
+        "channelTitle": "Victor Talking",
+        "description": "Surprising Chinese Koreans by Speaking Their Dialect and Korean in Korean China Town",
         "liveBroadcastContent": "none",
         "publishTime": "2018-03-24T16:00:08Z",
         "publishedAt": "2018-03-24T16:00:08Z",
